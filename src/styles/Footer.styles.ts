@@ -100,17 +100,17 @@ export const FooterLogo = styled.div`
 `;
 
 export const CompanyInfo = styled.div`
-  color: #8b96a5;
+  color: rgba(255, 255, 255, 0.725);
   line-height: 1.8;
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.725rem;
 
   p {
     margin: 0.5rem 0;
     transition: color 0.2s ease;
 
     &:hover {
-      color: #b4bec8;
+      color: rgba(255, 255, 255, 0.85);
     }
   }
 `;
@@ -147,10 +147,10 @@ export const LinkItem = styled.li`
 `;
 
 export const FooterLink = styled.a`
-  color: #8b96a5;
+  color: rgba(255, 255, 255, 0.725);
   text-decoration: none;
   transition: all 0.2s ease;
-  font-size: 0.9rem;
+  font-size: 0.725rem;
   display: inline-block;
   position: relative;
   background: none;
@@ -251,8 +251,8 @@ export const ContactItem = styled.div`
 `;
 
 export const ContactLabel = styled.div`
-  color: #8b96a5;
-  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.725);
+  font-size: 0.725rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.35rem;
@@ -261,14 +261,15 @@ export const ContactLabel = styled.div`
 
 export const ContactValue = styled.a`
   color: #ffffff;
-  font-size: 0.875rem;
+  font-size: 0.725rem;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
   transition: all 0.2s ease;
-  word-break: break-all;
+  word-break: break-word;
+  overflow-wrap: break-word;
 
   svg {
     width: 15px;
