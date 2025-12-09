@@ -100,17 +100,17 @@ export const FooterLogo = styled.div`
 `;
 
 export const CompanyInfo = styled.div`
-  color: rgba(255, 255, 255, 0.725);
+  color: #8b96a5;
   line-height: 1.8;
   margin-top: 1rem;
-  font-size: 0.725rem;
+  font-size: 0.9rem;
 
   p {
     margin: 0.5rem 0;
     transition: color 0.2s ease;
 
     &:hover {
-      color: rgba(255, 255, 255, 0.85);
+      color: #b4bec8;
     }
   }
 `;
@@ -147,10 +147,10 @@ export const LinkItem = styled.li`
 `;
 
 export const FooterLink = styled.a`
-  color: rgba(255, 255, 255, 0.725);
+  color: #8b96a5;
   text-decoration: none;
   transition: all 0.2s ease;
-  font-size: 0.725rem;
+  font-size: 0.9rem;
   display: inline-block;
   position: relative;
   background: none;
@@ -251,8 +251,8 @@ export const ContactItem = styled.div`
 `;
 
 export const ContactLabel = styled.div`
-  color: rgba(255, 255, 255, 0.725);
-  font-size: 0.725rem;
+  color: #8b96a5;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.35rem;
@@ -307,3 +307,43 @@ export const FooterBottom = styled.div`
   }
 `;
 
+export const PaymentIcons = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+
+  @media (max-width: 425px) {
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+`;
+
+export const PaymentIcon = styled.div`
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 425px) {
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+  }
+`;

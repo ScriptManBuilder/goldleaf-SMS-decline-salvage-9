@@ -14,7 +14,9 @@ import {
   ContactItem,
   ContactLabel,
   ContactValue,
-  FooterBottom
+  FooterBottom,
+  PaymentIcons,
+  PaymentIcon
 } from '../styles/Footer.styles';
 
 const Footer: React.FC = () => {
@@ -22,7 +24,7 @@ const Footer: React.FC = () => {
   const companyName = process.env.REACT_APP_COMPANY_NAME || 'Goldleaf Goods LLC';
   const companyAddress = process.env.REACT_APP_COMPANY_ADDRESS || 'Tumbleweed Way 1350 Sacramento CA USA 95834';
   const companyPhone = process.env.REACT_APP_PHONE_DISPLAY || '+1 7148725469';
-  const supportEmail = process.env.REACT_APP_EMAIL_SUPPORT || 'support@goldleafsmsrecovery.com';
+  const supportEmail = process.env.REACT_APP_EMAIL_SUPPORT || 'support@goldleafdirectmail.com';
 
   const handleScrollTo = (id: string) => {
     // Check if we're on the home page
@@ -45,11 +47,9 @@ const Footer: React.FC = () => {
             <FooterLogo>
               <svg viewBox="0 0 40 40" fill="none">
                 <circle cx="20" cy="20" r="18" fill="#8B5CF6" opacity="0.1"/>
-                <rect x="10" y="12" width="20" height="14" rx="3" stroke="#8B5CF6" strokeWidth="2" fill="none"/>
-                <path d="M12 15L20 20L28 15" stroke="#8B5CF6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="16" cy="22" r="1" fill="#8B5CF6"/>
-                <circle cx="20" cy="22" r="1" fill="#8B5CF6"/>
-                <circle cx="24" cy="22" r="1" fill="#8B5CF6"/>
+                <path d="M14 24L18 20L14 16" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 16L24 20L20 24" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M26 14L30 20L26 26" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               {brandName}
             </FooterLogo>
@@ -58,6 +58,14 @@ const Footer: React.FC = () => {
               <p>{companyAddress}</p>
               <p>Established {process.env.REACT_APP_COMPANY_BIRTH}</p>
             </CompanyInfo>
+            <PaymentIcons>
+              <PaymentIcon>
+                <img src="/visa.svg" alt="Visa" />
+              </PaymentIcon>
+              <PaymentIcon>
+                <img src="/mastercard.svg" alt="Mastercard" />
+              </PaymentIcon>
+            </PaymentIcons>
           </FooterSection>
 
           <FooterSection>
